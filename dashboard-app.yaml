@@ -11,6 +11,8 @@ spec:
     targetRevision: 7.10.0
     helm:
       releaseName: kubernetes-dashboard
+      values: |
+        kong.admin.tls.enabled=false
   destination:
     server: "https://kubernetes.default.svc"
     namespace: monitoring
