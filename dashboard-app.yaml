@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: kubernetes-dashboard
       values: |
-        kong.admin.tls.enabled=false
+        kong.admin.tls.enabled: false
   destination:
     server: "https://kubernetes.default.svc"
     namespace: monitoring
