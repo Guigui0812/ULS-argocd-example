@@ -12,6 +12,10 @@ spec:
     helm:
       releaseName: my-hello-world-api
       values: |
+        image:
+          name: "site-traiteur"
+          registry: "gorinje"
+          version: "latest"
         replicas: 2
   destination:
     server: "https://kubernetes.default.svc"
